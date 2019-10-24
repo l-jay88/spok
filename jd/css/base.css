@@ -1,0 +1,397 @@
+*{margin:0;padding:0}
+em,i{font-style:normal}
+li{list-style:none}
+img {
+    border: 0;
+    vertical-align: middle
+}
+button{cursor:pointer}
+a{color:#666;text-decoration:none;cursor: pointer}
+a:hover{color:#e33333  }
+button,input{border: none; font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif}
+body{-webkit-font-smoothing:antialiased;
+    background-color:#f0f3ef;
+    font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    color:#666}.hide,.none{display:none}
+.clearfix:after{visibility:hidden;clear:both;
+    display:block;content:".";height:0}
+.clearfix{*zoom:1}
+.stylered{color: #f10214}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?pryx07');
+    src:  url('fonts/icomoon.eot?pryx07#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pryx07') format('truetype'),
+    url('fonts/icomoon.woff?pryx07') format('woff'),
+    url('fonts/icomoon.svg?pryx07#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.w{
+    width:1190px;
+    margin: auto;
+
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+/*顶部开始*/
+.head{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #1145a4;
+}
+.head .head-im{
+    position: relative;
+    height: 80px;
+    width: 1190px;
+    cursor: pointer;
+}
+.head-im i{
+    font-family: "icomoon";
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color:#183d80 ;
+    color: #4368ab;
+
+}
+/*顶部结束*/
+
+/*导航栏开始*/
+.shortcut{
+
+    height: 30px;
+    background-color: #e3e4e5;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e7e6;
+}
+.shortcut a,li{
+    font-size: 12px;
+    color: #bcbdbd;
+}
+.shortcut a:hover{color:#e33333  }
+.fl li{
+    margin-left: 210px;
+
+}
+.fl i{
+    font-family: "icomoon";
+    color: #f1081b;
+    padding-right: 6px;
+}
+.shortcut .fr{
+    margin-right: 13px;
+    width: 706px;
+}
+.shortcut .fr li{
+
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+ .spacer{
+    margin: 9px 10px 0;
+    width: 1px;
+     height: 10px;
+    background-color: #c4c5c5;
+}
+ .shortcut ul .spacer{
+     height: 10px;
+ }
+.shortcut .fr-a{
+    margin-right: 6px;
+}
+.shortcut .donw{
+    position: relative;
+    padding-right:15px ;
+}
+.shortcut .donw span{
+    position: absolute;
+    left:51px;
+    top: 0px;
+    font-family: icomoon;
+
+}
+.shortcut .w{
+    position: relative;
+}
+.shortcut .qr{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #cbb1b1;
+    background: url("../images/qr.png") no-repeat 5px 5px;
+    z-index: 1;
+}
+.shortcut #jiao{
+    position: absolute;
+    top:-19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    border-width: 10px;
+    border-color:transparent transparent white transparent;
+    border-style:  solid;
+}
+.shortcut .fr-f{
+    margin-left: 36px;
+}
+
+.shortcut .stylered{
+    color: #e33333;
+}
+
+
+/*导航栏结束*/
+
+/*headr开始*/
+.headr{
+    height: 140px;
+}
+.headr .headr-w{
+    position: relative;
+    height: 140px;
+}
+.headr-w .h-logo{
+    position: absolute;
+    top:-30px;
+    left: 0px;
+    width: 190px;
+    height: 170px;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+.h-logo a{
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -99999px;
+
+}
+
+/*搜索框*/
+.h-search{
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    width: 550px;
+    height: 35px;
+
+}
+.h-search input{
+    float: left;
+    width: 492px;
+    height: 35px;
+    padding-left: 8px;
+}
+.h-search button{
+    float: left;
+    width: 50px;
+    height: 35px;
+    color: white;
+    background-color: #f10215;
+}
+.h-search i{
+    font-family: "icomoon";
+    line-height: 40px;
+    font-size: 21px;
+}
+.h-search span{
+    position: absolute;
+    top:0;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    left: 466px;
+    font-family: "icomoon";
+    cursor: pointer;
+}
+.h-search span:hover{
+    color: #f10215;
+}
+
+/*热词部分*/
+
+.headr .h-hotwod{
+    position: absolute;
+    left: 320px;
+    top: 64px;
+    width: 550px;
+    height: 20px;
+}
+ .h-hotwod li a{
+    float: left;
+    padding-right: 10px;
+    color: #bab7b6;
+    line-height: 20px;
+
+}
+.h-hotwod .hot-h{
+    padding-right: 20px;
+}
+.h-hotwod .stylered{
+    color: #e33333;
+}
+
+/*购物车*/
+.headr .mycar{
+    position: absolute;
+    left: 900px;
+    top: 25px;
+    width: 190px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #f1f2f1;
+    font-size: 14px;
+    background-color: white;
+}
+.mycar i{
+    font-family: "icomoon";
+    padding-right: 5px;
+}
+.mycar s{
+    position: absolute;
+    left: 144px;
+    top: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    height: 13px;
+    line-height: 13px;
+    background-color:#f10215 ;
+    color: white;
+    padding: 0 3px;
+    border-radius: 9px;
+}
+
+
+.navitems{
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    width: 790px;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 20px;
+    font-weight: 700;
+
+}
+.navitems ul{
+    float: left;
+}
+.navitems div{
+    float: left;
+    margin: 15px -13px 0 13px;
+}
+.navitems li{
+    float: left;
+    margin-left: 26px;
+}
+
+
+.headr .lor{
+    position: absolute;
+    right: 2px;
+    top: 90px;
+    width: 190px;
+    height: 38px;
+
+}
+
+/*底部开始*/
+
+/*多快好省*/
+.footer .foot-serv{
+    border-bottom: 1px solid #e5e7e6;
+
+}
+.foot-serv .f-s-liner{
+    padding: 30px 0;
+
+}
+.foot-serv .f-s-liner li{
+    float: left;
+    height: 42px;
+    width: 297px;
+    line-height: 42px;
+
+}
+.footer .liner-unit{
+    width: 255px;
+    margin: 0 auto;
+}
+.footer h5{
+    float: left;
+    width: 36px;
+    height: 42px;
+    text-indent: -9999px;
+    background:url("../images/ico.png") no-repeat;
+}
+.footer .one h5{
+    background-position:  0 0;
+}
+.footer .tow h5{
+    background-position:  0 -42px;
+}
+.footer .three h5{
+    background-position:    0 -86px;
+}
+.footer .four h5{
+    background-position:  0 -128px;
+}
+ .footer .liner-unit p{
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444444;
+}
+ /*帮助*/
+
+.footer .footer-h-inner{
+    height: 159px;
+    padding:20px 0;
+    border-bottom: 1px solid #e5e7e6;
+}
+.footer-h-inner dl{
+    float: left;
+    width: 198px;
+    line-height: 22px;
+}
+.footer-h-inner dl dt{
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.footer-help .convor{
+    width: 200px;
+    height: 150px;
+    background: url("../images/ico_footer.png") no-repeat 0 0;
+}
+.convor .info{
+    text-align: center;
+}
+.convor dd{
+    padding: 0 10px;
+}
+.convor #rig{
+    float: right;
+}
+
+/*底部结束*/
+/*headr结束*/

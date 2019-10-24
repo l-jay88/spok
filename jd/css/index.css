@@ -1,0 +1,363 @@
+*{margin:0;padding:0}
+em,i{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle }/**/
+button{cursor:pointer}
+a{color:#666;text-decoration:none}
+a:hover{color:#e33333  }
+button,input{border: none; font-family:Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif}
+body{-webkit-font-smoothing:antialiased;
+    background-color:#f0f3ef;
+    font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    color:#666}.hide,.none{display:none}
+.clearfix:after{visibility:hidden;clear:both;
+    display:block;content:".";height:0}
+.clearfix{*zoom:1}
+.stylered{color: #f10214}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?pryx07');
+    src:  url('fonts/icomoon.eot?pryx07#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pryx07') format('truetype'),
+    url('fonts/icomoon.woff?pryx07') format('woff'),
+    url('fonts/icomoon.svg?pryx07#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.w{
+    width:1190px;
+    margin: auto;
+
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+
+
+
+/*main开始*/
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+.main{
+    height: 480px;
+}
+
+.main .fs{
+    height: 480px;
+}
+.fs .fs-clo1{
+    float: left;
+    width: 190px;
+    height: 479px;
+    margin-right: 10px;
+    background-color: #fefefe;
+    border-top: 1px solid #f0f3ef;
+}
+.fs .fs-clo2{
+     float: left;
+     width: 590px;
+     height: 480px;
+     margin-right: 10px;
+ }
+.fs .fs-clo3{
+    float: left;
+    width: 190px;
+    height: 480px;
+    margin-right: 10px;
+}
+.fs .fs-clo4{
+    float: left;
+    width: 190px;
+    height: 480px;
+
+}
+
+/*clo1部分*/
+.fs .clo1-inner{
+    padding: 6px 0;
+}
+.fs .clo1-inner li{
+    padding-left: 18px;
+    height: 26px;
+    line-height: 26px;
+
+}
+.fs .clo1-inner li a{
+    font-size: 14px;
+    color: #626262;
+}
+.clo1-inner li span{
+    padding: 0 2px;
+}
+
+/*clo2部分*/
+.fs .fs-clo2{
+    position: relative;
+}
+.fs-clo2 .clo2-inner{
+    position: relative;
+    width: 590px;
+    height: 470px;
+    margin-top: 10px;
+}
+.fs .clo2-dot{
+    position: absolute;
+    left: 46px;
+    top: 432px;;
+    width: 152px;
+    height: 18px;
+}
+.clo2-dot li{
+    position: relative;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 1px;
+    /*background-color: hsla(0,0%,100%,.4);*/
+    border-radius: 9px;
+ }
+.clo2-dot li i{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid hsla(0,0%,100%,.4);
+    border-radius: 7px;
+}
+.clo2-dot li:hover{
+    background-color: hsla(0,0%,100%,.4);
+}
+.clo2-dot li:hover i{
+    background-color: white;
+    border-color: white;
+}
+.clo2-inner .arr{
+    position: absolute;
+    top: 235px;
+    margin-top: -20px;
+    left: 0;
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0,0,0,.2);
+}
+.clo2-inner .arr i{
+    position: absolute;
+    left:0;
+    top: 50%;
+    margin-top: -10px;
+    font-family: "icomoon";
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: rotate(90deg);
+    font-size: 18px;
+    color: hsla(0,0%,100%,.4);
+}
+.clo2-inner .arr:hover{
+    background-color:rgba(0,0,0,.4) ;
+
+}
+.fs-clo2 .clo2-inner .arr-r{
+    left: 566px;
+    -webkit-transform: rotate(180deg);
+}
+/*clo3部分*/
+.clo3-rec{
+    width: 190px;
+    height: 470px;
+
+}
+.clo3-rec li{
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+
+}
+
+/*clo4部分*/
+.clo4-user{
+    position: relative;
+    height: 150px;
+    width: 190px;
+    margin-top: 10px;
+    background: #FFFFFF;
+
+}
+.clo4-user .user-login{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 3px 6px 25px #c3c3c3;
+}
+.user-login img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.clo4-user .user-b{
+    height: 40px;
+    padding: 60px 10px 0;
+    line-height: 20px;
+    text-align: center;
+}
+.clo4-user .user-b1{
+    color: #888888;
+}
+.clo4-user .user-deng a{
+    color: #666666;
+    padding: 0 2px;
+}
+.clo4-user .user-deng a:hover{
+    color: #f10215;
+}
+.clo4-user .user-bb{
+    height: 25px;
+    margin-top: 10px;
+}
+.user-bb a{
+    float: left;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 13px;
+    box-shadow: 6px 8px 20px rgba(45,45,45,.15)
+}
+.user-bb .stylered{
+    margin-left: 15px;
+}
+.user-bb .plus{
+    color: #e5d790;
+}
+.clo4-mor{
+    height: 130px;
+    background: #FFFFFF;
+}
+
+.clo4-mor .mor-top{
+    height: 19px;
+    padding-top: 8px;
+    line-height: 19px;
+}
+.clo4-mor .mor-top h5{
+    float: left;
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.clo4-mor .mor-top a{
+    float: right;
+    line-height: 13px;
+    font-size: 12px;
+    color: #999999;
+}
+.clo4-mor .mor-top a:hover{
+    color: #8b8499;
+}
+ .mor-top a i{
+     margin: 0 5px;
+ }
+.clo4-mor .mor-but{
+    height: 88px;
+    padding:  8px 15px 0;
+}
+.mor-but li{
+    line-height: 21px;
+    max-width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+    font-size: 12px;
+}
+.mor-but li span{
+    display: inline-block;
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    background-color: #e47f7f;
+    margin-right: 6px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+}
+.clo4-other{
+    padding: 18px 11px 7px;
+    width: 168px;
+    height: 165px;
+    background: #FFFFFF;
+
+}
+.clo4-other li{
+    position: relative;
+    float: left;
+    width: 42px;
+    height: 55px;
+    text-align: center;
+    line-height: 25px;
+}
+.clo4-other li a{
+    color: #d1c5ae;;
+}
+.clo4-other li a:hover{
+    color: #f10215;
+}
+.clo4-other li i{
+    display: block;
+    font-family: "icomoon";
+    width: 20px;
+    height: 20px;
+    margin:10px 11px 0;
+}
+.clo4-other li span{
+    line-height: 25px;
+}
+
+#jiang{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 12px;
+    height: 16px;
+    background-color:#e01121;
+}
+#jiang .j-1{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 12px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 12px;
+    color: white;
+}
+#jiang .j-2{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
