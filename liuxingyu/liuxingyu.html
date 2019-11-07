@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+
+<script type="text/javascript">
+    var canV= document.querySelector("#canvas");
+    ctX = canV.getContext("2d");//可返回一个对象，该对象提供了用于在画布上绘图的方法和属性
+    var oWidth = window.innerWidth,
+            oHight = window.innerHeight;
+            canV.width  = oWidth;
+            canV.height = oHight;
+    var oText = "QWERTYUIOPASDFGHJKLZXCVBNM",
+            Fs =24,
+            oNum = Math.floor(canV.width/24),//一行显示多少个字母
+            oArr=[];//存放字母的Y坐标
+    for (var i = 0;i<oNum;i++){
+        oArr.push(0);//Y坐标的起始值都为0
+        console.log(oArr[i]);
+    }
+    function draw(){
+        //文字与背景喧染
+        ctX.fillStyle = "rgba(0,0,0,0.1)";
+        ctX.fillRect(0,0,oWidth,oHight);
+        ctX.fillStyle = "green";
+        ctX.font = Fs+"px";
+
+        //字母的X与Y坐标
+        for (var i=0;i<oNum;i++){
+            var oX = Fs* i,//X坐标
+                    oY = oArr[i]*Fs,//Y坐标
+            oRandom = Math.floor(Math.random()*oText.length);
+            ctX.fillText(oText[oRandom],oX,oY);//渲染文字
+            if(oY>oHight&&Math.random()>0.93){
+                oArr[i] = 0;
+            }
+            oArr[i]++;
+
+        }
+    }
+setInterval(draw,50);
+
+
+
+
+</script>
+
+</body>
+</html>
